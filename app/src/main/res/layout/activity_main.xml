@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:id="@+id/rr"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <in.softment.exampractice.Util.NonSwipeAbleViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:id="@+id/viewpager"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_above="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E3E3E3"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIconTint="@color/tab_layout"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="@color/tab_layout" />
+
+
+
+
+</RelativeLayout>
+

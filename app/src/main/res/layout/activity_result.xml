@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#292929"
+    >
+<TextView
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="RESULT"
+    android:fontFamily="@font/pbold"
+    android:textColor="#FFFFFF"
+    android:textSize="20dp"
+    />
+    <com.makeramen.roundedimageview.RoundedImageView
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:riv_corner_radius="50dp"
+        android:src="@drawable/profile_placeholder"
+        android:layout_marginTop="16dp"
+        android:id="@+id/profileImage"
+        />
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vijay Rathore"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/psemibold"
+        android:textColor="#E6E6E6"
+        android:textSize="17sp"
+        android:id="@+id/userName"
+        />
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:fontFamily="@font/psemibold"
+                android:textSize="15sp"
+                android:textColor="@color/light_gray"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="84.33"
+                android:fontFamily="@font/pbold"
+                android:textSize="28sp"
+                android:id="@+id/score"
+                android:textColor="@color/dark"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        >
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/totalquestion"
+                >
+                <TextView
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/psemibold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:id="@+id/totalQuestions"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total\nQuestions"
+                android:textAlignment="center"
+                android:fontFamily="@font/pregular"
+                android:textColor="@color/light_gray"
+                android:layout_marginTop="8dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/totaltrue"
+                >
+                <TextView
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/pbold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:id="@+id/totalTrue"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total\nCorrect"
+                android:textAlignment="center"
+                android:fontFamily="@font/pregular"
+                android:textColor="@color/light_gray"
+                android:layout_marginTop="8dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/totalfalse"
+                >
+                <TextView
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/pbold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:id="@+id/totalWrong"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total\nWrong"
+                android:textAlignment="center"
+                android:fontFamily="@font/pregular"
+                android:textColor="@color/light_gray"
+                android:layout_marginTop="8dp"
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        >
+    <LinearLayout
+
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/checkanswer"
+        android:id="@+id/checkAnswer"
+       android:layout_marginEnd="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Answers"
+            android:fontFamily="@font/psemibold"
+            android:textSize="14sp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginStart="8dp"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:background="@drawable/homeback"
+            android:id="@+id/goHome"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:fontFamily="@font/psemibold"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

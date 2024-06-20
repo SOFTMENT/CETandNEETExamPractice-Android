@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".Fragment.DashboardFragment">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/profile_placeholder"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:riv_corner_radius="8dp"
+            android:id="@+id/profileImage"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/notification"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_outline_notifications_none_24"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#535353"
+        android:fontFamily="@font/pbold"
+        android:text="Hey Vijay, what subject\ndo you want to improve today?"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="20dp"
+        android:id="@+id/recyclerview"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+</RelativeLayout>
+
+

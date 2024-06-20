@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ResumeQuestionActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainLL"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                >
+                <ImageView
+                    android:id="@+id/backImage"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:fontFamily="@font/pregular"
+                    android:layout_toEndOf="@+id/backImage"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:textSize="13sp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/questionCompletedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Question 1 Of 100"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/light_gray"
+                android:fontFamily="@font/psemibold"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <androidx.core.widget.NestedScrollView
+                android:layout_above="@+id/bottomRR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                >
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/questionTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Who's is the diameter of a basketball hoop in inches?"
+                            android:fontFamily="@font/pbold"
+                            android:textSize="17sp"
+                            android:textColor="#333"
+                            />
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:visibility="gone"
+                            android:layout_marginTop="10dp"
+                            app:riv_corner_radius="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:src="@drawable/taj"
+                            android:id="@+id/queImage"
+                            android:scaleType="centerCrop"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="vertical"
+                        android:weightSum="4"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/choiceView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selected_answer_back"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <LinearLayout
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/circle_back_for_answer"
+                                android:layout_marginStart="12dp"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="A"
+                                    android:fontFamily="@font/psemibold"
+                                    android:textSize="13sp"
+
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+
+                                android:paddingBottom="16dp"
+                                android:paddingTop="10dp"
+                                android:id="@+id/choice1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:text="SOFTMENT is software development and web development Company based in India.SOFTMENT is software development and web development Company based in India. "
+                                android:fontFamily="@font/pregular"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/choiceView2"
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/unselected_answer_back"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <LinearLayout
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/circle_back_for_answer"
+                                android:layout_marginStart="12dp"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="B"
+                                    android:fontFamily="@font/psemibold"
+                                    android:textSize="13sp"
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:layout_marginEnd="10dp"
+                                android:id="@+id/choice2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/pregular"
+                                android:text="Shivraj singh Chauhan" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/choiceView3"
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/unselected_answer_back"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <LinearLayout
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/circle_back_for_answer"
+                                android:layout_marginStart="12dp"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="C"
+                                    android:fontFamily="@font/psemibold"
+                                    android:textSize="13sp"
+                                    />
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/choice3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:paddingBottom="16dp"
+                                android:paddingTop="16dp"
+                                android:layout_marginEnd="10dp"
+                                android:text="SOFTMENT is software development and web development Company based in India. Headquartered in Bhopal Madhya Pradesh "
+                                android:fontFamily="@font/pregular"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/choiceView4"
+                            android:layout_marginTop="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/unselected_answer_back"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            >
+                            <LinearLayout
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:background="@drawable/circle_back_for_answer"
+                                android:layout_marginStart="12dp"
+                                android:gravity="center"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="D"
+                                    android:fontFamily="@font/psemibold"
+                                    android:textSize="13sp"
+                                    />
+                            </LinearLayout>
+
+                            <TextView
+                                android:paddingTop="16dp"
+                                android:paddingBottom="16dp"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="@font/pregular"
+                                android:id="@+id/choice4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Arvind Kejriwal"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+            <RelativeLayout
+
+                android:id="@+id/bottomRR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-1dp"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatButton
+
+
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/previousBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/edittext_back"
+                    android:backgroundTint="#00BCD4"
+                    android:fontFamily="@font/psemibold"
+
+                    android:text="PREVIOUS"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/nextBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn_back"
+                    android:backgroundTint="#2196F3"
+                    android:fontFamily="@font/psemibold"
+                    android:text="NEXT"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+

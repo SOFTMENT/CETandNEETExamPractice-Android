@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:background="@drawable/corner_radius_12"
+    android:layout_margin="6dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            >
+
+            <ImageView
+                android:id="@+id/categoryImage"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/psemibold"
+            android:textColor="#444"
+            android:textSize="14sp"
+
+            />
+        <TextView
+            android:id="@+id/categoryQuiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 Quiz"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/pregular"
+            android:textColor="#999"
+            android:textSize="10sp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+

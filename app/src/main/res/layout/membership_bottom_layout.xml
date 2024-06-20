@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/membershipSheet"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="77dp"
+        android:layout_height="2dp"
+        android:background="@drawable/corner_radius_12"
+        android:backgroundTint="#343434"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Plan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/psemibold"
+        android:textSize="14sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/normal_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/normal_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/psemibold"
+                android:text="BASIC PACKAGE"
+                android:textColor="#888"
+                android:textSize="11sp" />
+
+            <CheckBox
+                android:id="@+id/monthly_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/normal_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/normal_label"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/psemibold"
+                android:text="A$4 / 10 Quiz"
+                android:textColor="#343434"
+                android:textSize="12sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/freeTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/normal_label"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/normal_price"
+                android:fontFamily="@font/psemibold"
+                android:text="First month free"
+                android:textColor="#4CAF50"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/normal_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/normal_price"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/pregular"
+                android:text="Subscribe and get access of discount vouchers and find out what’s on around the NT"
+                android:textColor="@color/light_gray"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yearly_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/yearly_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/psemibold"
+                android:text="SPECIAL PACKAGE (Recommended)"
+                android:textColor="#888"
+                android:textSize="11sp" />
+
+            <CheckBox
+                android:id="@+id/yearly_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/yearly_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yearly_label"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/psemibold"
+                android:text="A$40 / 12 QUIZ"
+                android:textColor="#343434"
+                android:textSize="12sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/freeTag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yearly_label"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/yearly_price"
+                android:fontFamily="@font/psemibold"
+                android:text="First month free"
+                android:textColor="#4CAF50"
+                android:textSize="11sp" />
+
+
+            <TextView
+                android:id="@+id/yearly_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yearly_price"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/pregular"
+                android:text="Subscribe and get access of discount vouchers and find out what’s on around the NT"
+                android:textColor="@color/light_gray"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/psemibold"
+        android:textColor="@color/white"
+        android:background="@drawable/edittext_back"
+        android:backgroundTint="@color/main_color"
+        android:text="Continue to Checkout"
+        android:id="@+id/payBtn"
+        />
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:text="Subscription will automatically renew unless auto-renew is turned off from google payment at least 24 hours before the end of the current period.Your account will be charged for renewal."
+        android:fontFamily="@font/psemibold"
+        android:textSize="12sp"
+        android:textColor="#D6D6D6"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        >
+        <TextView
+
+            android:id="@+id/termsOfUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Terms Of Use"
+            android:fontFamily="@font/psemibold"
+            android:textSize="12sp"
+            android:textColor="#3F51B5"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="  |  "
+            android:fontFamily="@font/psemibold"
+            android:textSize="12sp"
+            android:textColor="@color/light_gray"
+            />
+
+        <TextView
+
+            android:id="@+id/privacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Privacy Policy"
+            android:fontFamily="@font/psemibold"
+            android:textSize="12sp"
+            android:textColor="#3F51B5"
+            />
+    </LinearLayout>
+</LinearLayout>
